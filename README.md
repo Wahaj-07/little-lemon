@@ -18,3 +18,41 @@ A React web application for the Little Lemon restaurant that allows customers to
 ## Installation
 
 1. Clone this repository:
+
+git clone https://github.com/Wahaj-07/little-lemon.git
+
+2. Navigate into the project folder:
+
+cd little-lemon
+
+3. Install dependencies:
+
+npm install
+
+4. Start the development server:
+
+npm start
+
+5. Open http://localhost:3000 in your browser.
+
+## Running Tests
+
+npm test
+
+## Project Structure
+
+src/
+  components/
+    Header.js
+    Nav.js
+    Footer.js
+    BookingForm.js
+    BookingForm.test.js
+  App.js
+  App.css
+
+## Technologies Used
+
+- React
+- Jest & React Testing Library
+- CSS3

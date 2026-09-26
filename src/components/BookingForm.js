@@ -11,8 +11,15 @@ function BookingForm() {
     const newErrors = {};
 
     if (!date) {
-      newErrors.date = 'Please select a date.';
-    }
+  newErrors.date = 'Please select a date.';
+} else {
+  const selectedDate = new Date(date);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  if (selectedDate < today) {
+    newErrors.date = 'Please select a future date.';
+  }
+}
     if (!time) {
       newErrors.time = 'Please select a time.';
     }
